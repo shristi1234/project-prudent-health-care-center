@@ -1,0 +1,102 @@
+#MyProject/Patient Management System
+
+#System Login Process
+print("LOG IN")
+Email = input("Enter your E-mail address")
+print(Email)
+Password = input("Enter your password 10 digit ")
+print(Password)
+#This is appointment taking process.
+print("Take an Appointment")
+print("List of Physicians")
+print("1. Doctor Shristi")
+print("2. Doctor Biswas")
+print("3. Doctor Roshan")
+print("4. Doctor Rizu ")
+
+# This is for Doctor Shristi
+
+select_doctor = input("Choose your doctor")
+
+if select_doctor == "1":
+
+        print("Doctor Shristi \n a. 9AM-10AM \n b.11AM-12PM \n c. 1PM-2PM")
+
+        your_time = input("Favouralbe time")
+        if your_time == "a":
+            print("a. 9AM-10AM")
+        elif your_time == "b":
+            print("b. 11AM-12PM")
+        elif your_time == "c":
+            print("c. 1PM-2PM")
+        else:
+            print("Not available")
+#This is for Doctor Biswas
+
+elif select_doctor == "2":
+
+        print("Doctor Biswas \n a. 10:30AM-11:30AM\n b. 12:30PM-1:30PM \n c. 2:30PM-3:30PM")
+
+        your_time = input("Favouralbe time")
+        if your_time == "a":
+            print("a. 10:30AM-11:30AM")
+        elif your_time == "b":
+            print("b. 12:30PM-1:30PM")
+        elif your_time == "c":
+            print("c. 2:30PM-3:30PM")
+        else:
+            print("Not available")
+
+#This is for Doctor Roshan
+
+elif select_doctor == "3":
+
+        print("Doctor Roshan \n a. 11AM-12AM \n b. 1PM-2PM \nc. 3PM-4PM")
+
+        your_time = input("Favouralbe time")
+
+        if your_time == "a":
+            print("a. 11AM-12AM")
+        elif your_time == "b":
+            print("b. 1PM-2PM")
+        elif your_time == "c":
+            print("c. 3PM-4PM")
+        else:
+            print("Not available")
+
+#This is for Doctor Rizu
+
+elif select_doctor == "4":
+
+        print("Doctor Rizu \n a. 1:30PM-2:30AM \n b. 3:30PM-4:30PM \n c. 4:30PM-5:30PM")
+
+        your_time = input("Favouralbe time")
+
+        if your_time == "a":
+            print("a. 1:30PM-2:30AM")
+        elif your_time == "b":
+            print("b. 3:30PM-4:30PM")
+        elif your_time == "c":
+            print("c. 2:30PM-3:30PM")
+        else:
+            print("Not available")
+
+
+else:
+    print("Doctor not available")
+
+print("1.Payment with Cash")
+print("2.Payment with Credit")
+payment = input(" payment done ")
+if payment=="1":
+    print("payment done by cash")
+    record_bill = input("Please enter the receipt no. for the bill")
+    print(record_bill)
+    print= input("Thank you")
+elif payment=="2":
+     print("payment done by credit")
+     credit_bill = input("Please enter the credit card number")
+     print(credit_bill)
+     print("Thank you")
+else:
+    print("Payment not complited\nGo for payment")
